@@ -1,7 +1,6 @@
 a{
     text-decoration: none;
     display: inline-block;
-
 }
 
 h1{
@@ -13,8 +12,52 @@ h1{
     line-height: 64px; /* 133.333% */
 }
 
+h3{
+    color: #2A3246;
+font-family: Poppins;
+font-size: 30px;
+font-style: normal;
+font-weight: 600;
+line-height: 80px; /* 266.667% */
+}
+
+h4{
+    color: #263238;
+    font-family: Poppins;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 48px; /* 218.182% */
+}
+
+h6{
+    color: #8F95A5;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.text{
+    color: #8F95A5;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+
 .flex {
     display: flex;
+}
+.sb{
+    justify-content: space-between;
 }
 
 .big-title{
@@ -32,18 +75,17 @@ h1{
 
 body{
     font-family: Poppins;
-    color: #000;
 }
 
 .container {
-    margin: 0 28px;
-}
-.center{
-    display: flex;
-    justify-content: center;
+    min-height:100%;
+   position:relative;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 10px;
 }
 
-.header{
+.header__block{
     align-items: center;
     justify-content: space-between;
     margin-top: 25px;
@@ -70,7 +112,12 @@ body{
     font-weight: 500;
     line-height: normal;
 }
-.header__btn {
+
+.header__btn a{
+    text-decoration: none;
+}
+.header__btn a{
+    
     justify-content: center;
     align-items: center;
     border-radius: 5px;
@@ -82,9 +129,20 @@ body{
     font-weight: 400;
     line-height: normal;
 }
-.first-screen{
-justify-content: space-between;
-margin: 68px 0;
+
+.header__btn :hover{
+    color: #FFF;
+    background: #263238;
+
+}
+
+.first-screen__block{
+    justify-content: space-between;
+    margin: 68px 0;
+}
+
+.first-screen__title{
+    position: relative;
 }
 
 
@@ -106,32 +164,34 @@ margin: 68px 0;
 }
 
 .first-screen__title img{
-    position: absolute;
-    top: 230px;
-    left: 330px;
+
+    padding: 90px 0 0 12px;
+
 }
 
-.first-screen__text-content a{
+.first-screen__button a{
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
     color: #FFF;
     padding: 22px 80px;
     border-radius: 5px;
+    border: 2px solid#263238;
     background: #263238;
-   
+}
+.first-screen__button a:hover{
+    color:#263238;
+    background: #FFF;
+    border: 2px solid#263238;
+    border-radius: 5px;
 }
 
-.screen-2__content{
+.skills__content{
     display: flex;
     justify-content: center;
 }
 
-.title{
-margin: 47px 0 53px;
-}
-
-.screen-2__card-title{
+.skills__card-title{
     color: #263238;
     font-family: Poppins;
     font-size: 22px;
@@ -140,7 +200,7 @@ margin: 47px 0 53px;
     line-height: 80px; /* 363.636% */
 }
 
-.screen-2__card{
+.skills__card{
     gap: 30px;
     display: flex;
     flex-direction: column;
@@ -150,7 +210,7 @@ margin: 47px 0 53px;
     padding: 30px;
 }
 
-.screen-2__left{
+.skills__left{
     width: 33.3%;
 }
 
@@ -158,7 +218,7 @@ margin: 47px 0 53px;
     height: 205px;
     width: 205px;
 }
-.screen-2__card p{
+.skills__card p{
     word-wrap: break-word;
     color: #8F95A5;
     font-family: Poppins;
@@ -168,14 +228,14 @@ margin: 47px 0 53px;
     line-height: normal;
     
 }
-.screen-2__right-top-cards p {
+.skills__right-top-cards p {
     width: 258px;
 }
 
-.screen-2__left p{
+.skills__left p{
     width: 262px;
 }
-.screen-2__card-btn{
+.skills__card-btn{
     
     color: #FFF;
     border-radius: 5px;
@@ -183,21 +243,182 @@ margin: 47px 0 53px;
     padding: 18px 42px;
 }
 
-.screen-2__right{
+.skills__right{
     flex-direction: column;
     margin-left: 13px;
 }
 
-.screen-2__right-top-cards{
+.skills__right-top-cards{
 gap: 13px;
 margin-bottom: 13px;
 }
 
-.last-card{
+.skills__bottom-card{
     gap: 30px;
     border-radius: 10px;
     background: #F5F5F5;
 }
-.last-card p{
+.skills__bottom-card p{
     width: 293px;
+}
+
+.about-us__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-us_left-side p{
+    width: 635px;
+    word-wrap: break-word;
+    margin: 13px 0 80px;
+}
+.about-us__title{
+    margin-top: 106px;
+    justify-content: space-between;
+}
+
+.about-us_right-side img{
+    position: relative;
+    bottom: -103px;
+}
+.pricing__price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 205px;
+    height: 45px;
+    border-radius: 5px;
+    background: #EEE;
+    margin: auto;
+
+    position: absolute;
+    bottom: 0px;
+
+}
+
+.pricing{
+    height: 550px;
+}
+
+.pricing__price p{
+    color: #546269;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.pricing_card h6{
+    width: 295px;
+    word-wrap: break-word;
+    margin: 14px 0 30px;
+}
+
+.prici_title{
+    margin: 100px 0 10px;
+}
+
+.pricing__price-numbers{
+    color: #263238;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.card-2{
+padding-top: 27px;
+}
+
+.card-3{
+    margin-top: -20px;
+}
+
+.contact_us{
+    margin-top: 136px;
+}
+
+.contact_us__img{
+margin-right: 109px;
+}
+
+.contact_us p{
+    color: #8F95A5;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 3px 0 34px;
+}
+
+.contact_us__email{
+    width: 323px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid #8F95A5;
+}
+
+.contact_us__submit{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 193px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #263238;
+}
+
+.contact_us__submit:hover{
+color: #263238;
+background-color: #FFF;
+}
+
+.footer{
+
+}
+
+.footer__line{
+    margin-top: 157px;
+    width: 929px;
+    height: 1px;
+    background: #C4C4C4;
+}
+
+
+.footer__bottom{
+    
+    align-items: center;
+}
+
+.footer__bottom a{
+    text-decoration: none;
+    color: #8F95A5;
+
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.footer__bottom a:hover{
+color: #000;
+}
+
+.footer__bottom p{
+    color: #8F95A5;
+
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
